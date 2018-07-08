@@ -1,5 +1,6 @@
 # wdio-eyes.selenium-service
 [Applitools](https://applitools.com) Eyes support for [webdriver.io](https://http://webdriver.io/).
+This wrapper built around the most maintained JS package of Applitools.Eyes that is more stable and contains the most recent features.
 
 If you don't have an Applitools account yet, [signup](https://applitools.com/users/register) for free for a trial account.
 
