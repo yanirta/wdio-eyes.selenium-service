@@ -14,9 +14,10 @@ exports.config = {
         batchName: "My First Applitools WDIO Batch",
     },
 
-    host: '127.0.0.1',
-    port: 4444,
-    path: '/wd/hub',
+    host: 'ondemand.saucelabs.com',
+    port: 80,
+    user: process.env.SAUCE_USERNAME,
+    key: process.env.SAUCE_ACCESS_KEY,
     maxInstances: 10,
     //
     // If you have trouble getting all important capabilities together, check out the
@@ -24,10 +25,14 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'chrome',
+        platform: 'Windows 10',
+        screenResolution: '1600x1200'
     },
     {
-        browserName: 'chrome'
+        browserName: 'firefox',
+        platform: 'Windows 10',
+        screenResolution: '1280x1024'
     }],
     sync: true,
     logLevel: 'verbose',

@@ -1,10 +1,12 @@
 {
   "name": "wdio-eyes.selenium-service",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Applitools eyes wrapper on eyes.selenium",
   "main": "index.js",
   "scripts": {
-    "test": "BATCH_ID=`date` ./node_modules/.bin/wdio test/wdio.conf.js"
+    "test": "BATCH_ID=`date` wdio test/wdio.conf.js",
+    "testSauce": "BATCH_ID=`date` wdio test/wdio.sauce.conf.js",
+    "testWin": "set BATCH_ID=%date%%time% && wdio test/wdio.conf.js"
   },
   "repository": {
     "type": "git",
