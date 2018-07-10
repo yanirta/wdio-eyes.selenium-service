@@ -28,12 +28,12 @@ Initial setup:
         this.timeout(300000);
         describe("Test native App", function () {
             it("test-function-1",function () {
-                browser.EyesOpen("Hello world 1");
+                browser.eyesOpen("Hello world 1");
                 browser.url('/helloworld');
-                browser.EyesCheckWindow("Homepage");
+                browser.eyesCheckWindow("Homepage");
                 browser.click('button');
-                browser.EyesCheckWindow("After click");
-                browser.EyesClose(false);
+                browser.eyesCheckWindow("After click");
+                browser.eyesClose(false);
             });
         });
     });
