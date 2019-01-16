@@ -12,6 +12,7 @@ exports.config = {
         apiKey: process.env.APPLITOOLS_API_KEY,
         appName: "AppNameByConfig",
         batchName: "My First Applitools WDIO Batch",
+        debug: true
     },
 
     host: '127.0.0.1',
