@@ -19,7 +19,8 @@ Initial setup:
         globalMatchLevel: "Layout",                 //Optional
         disableCSSScrolling: True,                  //Optional
         disableFullPageScreenshot: True,            //Optional
-        serverUrl: "https://myeyes.applitools.com"  //Optional
+        serverUrl: "https://myeyes.applitools.com", //Optional
+        debug: True                                 //Optional
     },
     ```
 - Create your first test in tests/specs folder (if needed create the folders too)

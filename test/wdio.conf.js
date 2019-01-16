@@ -9,7 +9,7 @@ exports.config = {
     ],
 
     applitools: {
-        apiKey: process.env.API_KEY,
+        apiKey: process.env.APPLITOOLS_API_KEY,
         appName: "AppNameByConfig",
         batchName: "My First Applitools WDIO Batch",
     },
