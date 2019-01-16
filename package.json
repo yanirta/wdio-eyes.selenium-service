@@ -1,6 +1,6 @@
 {
   "name": "wdio-eyes.selenium-service",
-  "version": "0.0.15",
+  "version": "0.0.2",
   "description": "Applitools eyes wrapper on eyes.selenium",
   "main": "index.js",
   "scripts": {
