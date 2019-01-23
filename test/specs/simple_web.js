@@ -1,3 +1,7 @@
+var HelloWorldPage = require('../pageobjects/hello.world');
+var Target = require('eyes.selenium').Target;
+var By = require('selenium-webdriver').By;
+
 describe('Simple cases', function () {
     this.timeout(300000);
     describe("Test native App", function () {
@@ -16,6 +20,14 @@ describe('Simple cases', function () {
             browser.eyesCheckWindow("Homepage");
             browser.click('button');
             browser.eyesCheckWindow("After click");
+            browser.eyesClose(false);
+        });
+
+        it("test page objects regions", () => {
+            browser.eyesOpen("Page objects tests wdio");
+            HelloWorldPage.open();
+            browser.eyesCheck("title", Target.region(HelloWorldPage.title));
+            browser.eyesCheck("click me", Target.region(HelloWorldPage.clickMeBtn).fully());
             browser.eyesClose(false);
         });
     });
