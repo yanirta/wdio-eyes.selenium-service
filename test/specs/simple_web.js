@@ -29,6 +29,6 @@ describe('Simple cases', function () {
             browser.eyesCheck("title", Target.region(HelloWorldPage.title));
             browser.eyesCheck("click me", Target.region(HelloWorldPage.clickMeBtn));
             browser.eyesClose(false);
-        })
+        });
     });
 });
