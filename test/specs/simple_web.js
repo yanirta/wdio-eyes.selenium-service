@@ -27,7 +27,7 @@ describe('Simple cases', function () {
             browser.eyesOpen("Page objects tests wdio");
             HelloWorldPage.open();
             browser.eyesCheck("title", Target.region(HelloWorldPage.title));
-            browser.eyesCheck("click me", Target.region(HelloWorldPage.clickMeBtn));
+            browser.eyesCheck("click me", Target.region(HelloWorldPage.clickMeBtn).fully());
             browser.eyesClose(false);
         });
     });
