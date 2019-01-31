@@ -9,10 +9,12 @@ exports.config = {
     ],
 
     applitools: {
+        //disable: true,
         apiKey: process.env.APPLITOOLS_API_KEY,
         appName: "AppNameByConfig",
         batchName: "My First Applitools WDIO Batch",
-        debug: true
+        debug: true,
+        useEyesWDIO: true
     },
 
     host: '127.0.0.1',
@@ -27,9 +29,10 @@ exports.config = {
     capabilities: [{
         browserName: 'chrome'
     },
-    {
-        browserName: 'chrome'
-    }],
+        // {
+        //     browserName: 'chrome'
+        // }
+    ],
     sync: true,
     logLevel: 'verbose',
     coloredLogs: true,

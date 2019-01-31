@@ -17,10 +17,12 @@ Initial setup:
         viewport: {width: 1111, height: 650},       //Recommended for web, don't use in mobile
         batchName: "Config Batch",                  //Optional
         globalMatchLevel: "Layout",                 //Optional
-        disableCSSScrolling: True,                  //Optional
-        disableFullPageScreenshot: True,            //Optional
+        disableCSSScrolling: true,                  //Optional
+        disableFullPageScreenshot: true,            //Optional
         serverUrl: "https://myeyes.applitools.com", //Optional
-        debug: True                                 //Optional
+        debug: true,                                //Optional
+        disable: false,                             //Optional, relevant only if =true
+        useEyesWDIO: true                           //Optional, Use Applitools new WDIO sdk under the hood
     },
     ```
 - Create your first test in tests/specs folder (if needed create the folders too)
@@ -39,3 +41,23 @@ Initial setup:
         });
     });
     ```
+- Advanced scenarios:
+  - Fluent syntax - Describe all you need from your checkpoint in one liner short syntax:
+  ```javascript
+  var Target = require('edio-eyes.selenium-service').getTarget();
+  //...
+  //Checking the window with Layout algorithm
+  browser.eyesCheck("Checkpoint1", Target.window().layout());
+  //Working with regions and Page objects
+  browser.eyesCheck("Checkpoint2", Target.region(HelloWorldPage.title).layout());
+  ```
+  - Tags - Tagging interesting metrics of your tests later to be used with the "group by feature"
+  ![](https://user-images.githubusercontent.com/6667420/52020130-d7a64c00-24f8-11e9-8fb2-dc0189dabca7.png){ width=50% }
+  ```javascript
+  browser.eyesTag("Feature", "Feature1"); //can be called x #of different metrics you want to introduce
+  browser.eyesOpen("Hello world 1");
+  //... rest of the test
+  browser.eyesClose(false);
+  // Clearing up tags if we want a fresh start for the next test
+  browser.eyesClearTags();
+  ```
