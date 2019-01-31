@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/wdio-eyes.selenium-service.svg)](https://badge.fury.io/js/wdio-eyes.selenium-service)
 # wdio-eyes.selenium-service
 [Applitools](https://applitools.com) Eyes support for [webdriver.io](https://http://webdriver.io/).
 This wrapper built around the most maintained JS package of Applitools.Eyes that is more stable and contains the most recent features.
