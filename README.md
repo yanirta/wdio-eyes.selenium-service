@@ -52,7 +52,7 @@ Initial setup:
   browser.eyesCheck("Checkpoint2", Target.region(HelloWorldPage.title).layout());
   ```
   - Tags - Tagging interesting metrics of your tests later to be used with the "group by feature"
-  ![](https://user-images.githubusercontent.com/6667420/52020130-d7a64c00-24f8-11e9-8fb2-dc0189dabca7.png){ width=50% }
+  ![](https://user-images.githubusercontent.com/6667420/52020130-d7a64c00-24f8-11e9-8fb2-dc0189dabca7.png)
   ```javascript
   browser.eyesTag("Feature", "Feature1"); //can be called x #of different metrics you want to introduce
   browser.eyesOpen("Hello world 1");
