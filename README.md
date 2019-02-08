@@ -23,7 +23,8 @@ Initial setup:
         serverUrl: "https://myeyes.applitools.com", //Optional
         debug: true,                                //Optional
         disable: false,                             //Optional, relevant only if =true
-        useEyesWDIO: true                           //Optional, Use Applitools new WDIO sdk under the hood
+        useEyesWDIO: true,                          //Optional, Use Applitools new WDIO sdk under the hood
+        sendDom: true,                              //Optional, Currently for EyesWDIO, default:true
     },
     ```
 - Create your first test in tests/specs folder (if needed create the folders too)

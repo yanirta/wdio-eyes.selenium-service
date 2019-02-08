@@ -14,7 +14,8 @@ exports.config = {
         appName: "AppNameByConfig",
         batchName: "My First Applitools WDIO Batch",
         debug: true,
-        useEyesWDIO: true
+        useEyesWDIO: true,
+        sendDom: true
     },
 
     host: '127.0.0.1',
