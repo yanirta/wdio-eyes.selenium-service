@@ -1,4 +1,5 @@
 const ApplitoolsEyes = require('../index.js');
+process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 exports.config = {
     specs: [
         './test/specs/**/*.js'
@@ -10,12 +11,17 @@ exports.config = {
 
     applitools: {
         //disable: true,
+        //serverUrl: "",
         apiKey: process.env.APPLITOOLS_API_KEY,
-        appName: "AppNameByConfig",
-        batchName: "My First Applitools WDIO Batch",
-        debug: true,
-        useEyesWDIO: true,
-        sendDom: true
+        appName: "Test-App",
+        batchName: "Test-Batch",
+        useEyesWDIO: false,
+        //debug: true,
+        //sendDom: true,
+        //disableCSSScrolling: true, 
+        logFile: true,
+        //disableAbort: true
+        viewport: { width: 1200, height: 650 }
     },
 
     host: '127.0.0.1',
@@ -38,8 +44,8 @@ exports.config = {
     logLevel: 'verbose',
     coloredLogs: true,
     deprecationWarnings: true,
-    bail: 0,
-    screenshotPath: './errorShots/',
+    //bail: 0,
+    //screenshotPath: './errorShots/',
     baseUrl: 'https://applitools.com',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,

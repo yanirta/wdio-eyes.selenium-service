@@ -1,6 +1,6 @@
 {
   "name": "wdio-eyes.selenium-service",
-  "version": "0.0.41",
+  "version": "0.0.52",
   "description": "Applitools eyes wrapper on eyes.selenium",
   "main": "index.js",
   "scripts": {
@@ -25,13 +25,14 @@
   },
   "homepage": "https://github.com/yanirta/wdio-eyes.selenium-service#readme",
   "dependencies": {
-    "@applitools/eyes.webdriverio": "^2.0.1",
-    "eyes.selenium": "^3.6.2",
+    "@applitools/eyes-selenium": "^4.17.1",
+    "@applitools/eyes.webdriverio": "^2.3.1",
+    "eyes.selenium": "^3.6.3",
     "selenium-webdriver": "3.6.0"
   },
   "devDependencies": {
     "wdio-mocha-framework": "^0.6.2",
     "wdio-selenium-standalone-service": "0.0.10",
-    "webdriverio": "^4.13.1"
+    "webdriverio": "^4.14.4"
   }
 }
