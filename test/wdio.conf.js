@@ -10,29 +10,27 @@ exports.config = {
     ],
 
     applitools: {
-        //disable: true,
+        //disable: false,
         //serverUrl: "",
         apiKey: process.env.APPLITOOLS_API_KEY,
         appName: "Test-App",
         batchName: "Test-Batch",
-        useEyesWDIO: false,
-        //debug: true,
+        useEyesWDIO: true,
+        debug: true,
         //sendDom: true,
         //disableCSSScrolling: true, 
-        logFile: true,
+        logfile: true,
         //disableAbort: true
         viewport: { width: 1200, height: 650 }
+        //viewport: { width: 500, height: 650 }
+        //displayScrollbars: true
     },
 
     host: '127.0.0.1',
     port: 4444,
     path: '/wd/hub',
     maxInstances: 10,
-    //
-    // If you have trouble getting all important capabilities together, check out the
-    // Sauce Labs platform configurator - a great tool to configure your capabilities:
-    // https://docs.saucelabs.com/reference/platforms-configurator
-    //
+
     capabilities: [{
         browserName: 'chrome'
     },
@@ -54,5 +52,8 @@ exports.config = {
     framework: 'mocha',
     mochaOpts: {
         ui: 'bdd'
-    }
+    },
+
+    // debug: true,
+    // execArgv: ['--inspect-brk=127.0.0.1:5859'],
 }

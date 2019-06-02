@@ -38,5 +38,12 @@ describe('Simple cases', function () {
             browser.eyesClose(false);
             browser.eyesClearTags();
         });
+
+        it("Simple test case - homepage", function () {
+            browser.eyesOpen("Applitools home");
+            browser.url('/');
+            browser.eyesCheckWindow("Homepage");
+            browser.eyesClose(false);
+        });
     });
 });
