@@ -1,9 +1,10 @@
 [![npm version](https://badge.fury.io/js/wdio-eyes.selenium-service.svg)](https://badge.fury.io/js/wdio-eyes.selenium-service)
 # wdio-eyes.selenium-service
-[Applitools](https://applitools.com) Eyes support for [webdriver.io](https://http://webdriver.io/).
-This wrapper built around the most maintained JS package of Applitools.Eyes that is more stable and contains the most recent features.
+For the official Applitools-webdriverio package please go to the [official tutorial](https://applitools.com/tutorials/webdriverio.html) or go directly to [eyes.webdriverio package](https://www.npmjs.com/package/@applitools/eyes.webdriverio)
 
-If you don't have an Applitools account yet, [signup](https://applitools.com/users/register) for free for a trial account.
+This package is an unofficial wrapper built to let you chose between two applitools official packages [Eyes-Selenium](https://www.npmjs.com/package/@applitools/eyes-selenium) and [eyes.webdriverio](https://www.npmjs.com/package/@applitools/eyes.webdriverio) via a configuration flag, and it is wrapping bridge integration as part of it. 
+
+For the purpose of this package you will need an Applitools account, If you don't have one yet, please go and [signup here](https://applitools.com/users/register) for free trial account.
 
 To install run: `npm i wdio-eyes.selenium-service --save-dev`
 
